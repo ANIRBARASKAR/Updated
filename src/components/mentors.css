@@ -1,0 +1,29 @@
+.container1 {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container1 {
+  position: relative;
+}
+
+.image-overlay1 {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px; /* Adjust the size of the overlay image as needed */
+  height: 150px;
+}
+.text-back-shade{
+   background-color: rgb(203, 176, 176);
+}
+
+#border-card:hover{
+   border: 1px solid rgb(136, 131, 131);
+}
+
+.homebgOne:hover {
+  top: -50%;
+  filter: blur(2px) grayscale(1);
+}

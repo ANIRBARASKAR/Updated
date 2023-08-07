@@ -1,0 +1,19 @@
+.scrollable-text {
+    /* Set a fixed height to create a scrollable area */
+    height: 100vh;
+    /* Allow vertical scrolling */
+    overflow-y: auto;
+    /* Add some padding to avoid text sticking to the edges */
+    /* Optional: Add a border and rounded corners for a more appealing look */
+    border: 1px solid #eee1e1;
+    border-radius: 5px;
+    border: hidden;
+    
+  }
+
+  .scrollable-text::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  
+  

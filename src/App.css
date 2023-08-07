@@ -1,0 +1,165 @@
+.App {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+/* *{
+  overflow-x: hidden;
+} */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+.login-container,
+.register-container,
+.logout-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container input,
+.register-container input {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.login-container button,
+.register-container button,
+.logout-container button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.login-container button:hover,
+.register-container button:hover,
+.logout-container button:hover {
+  background-color: #45a049;
+}
+
+.logout-container h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.logout-container button {
+  margin: 0 auto;
+  display: block;
+}
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* .logo h1 {
+  margin: 0;
+  font-size: 24px;
+} */
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-menu.active {
+  transform: translateY(0);
+}
+
+.nav-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-items li {
+  margin: 10px 0;
+}
+
+.nav-items li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.nav-items li a:hover {
+  color: #e74c3c;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  margin: 5px;
+}
+
+.line-open {
+  transform: rotate(-45deg) translateY(3px);
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    position: static;
+    transform: translateY(0);
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-items li {
+    margin: 20px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+

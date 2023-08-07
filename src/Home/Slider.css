@@ -1,0 +1,15 @@
+
+.slider-container {
+    max-width:100%;
+    margin: 0 auto;
+  }
+  
+  .slide {
+    text-align: center;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  

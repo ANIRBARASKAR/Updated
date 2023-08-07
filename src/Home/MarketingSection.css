@@ -1,0 +1,8 @@
+/* MarketingSection.css */
+.box {
+    width: 20%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    /* Add any other desired glassmorphism styles here */
+  }
+  
